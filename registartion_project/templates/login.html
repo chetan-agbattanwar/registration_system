@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <form method="post" class="container">
+            {% csrf_token %}
+            <h3>Login Here</h3>
+            
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username">
+            <br><br>
+            <label for="password1">Password</label>
+            <input type="password" id="password1" name="password1" placeholder="Password">
+            <br><br>
+            <input type="submit" value="Login">
+        </form>
+        <a href="{% url 'signup' %}">create account</a>
+    </body>
+</html>
