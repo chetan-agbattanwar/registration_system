@@ -1,3 +1,4 @@
+  
 <html>
     <head>
         <title>Login Page</title>
@@ -13,8 +14,11 @@
             <label for="password1">Password</label>
             <input type="password" id="password1" name="password1" placeholder="Password">
             <br><br>
+            <input type="checkbox" name="checkbox"> Remember me
+            <a href="#">forget password</a>
+            <br><br>
             <input type="submit" value="Login">
         </form>
-        <a href="{% url 'signup' %}">create account</a>
+        Not Registered? <a href="{% url 'signup' %}">create an account</a>
     </body>
 </html>
